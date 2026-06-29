@@ -1,0 +1,38 @@
+.footer {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer__copy {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.footer__top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  cursor: pointer;
+}
+
+.footer__top:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}

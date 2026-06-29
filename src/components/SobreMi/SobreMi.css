@@ -1,0 +1,108 @@
+.sobre__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.sobre__eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.sobre__content { display: flex; flex-direction: column; gap: 16px; }
+
+.sobre__text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.sobre__stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 8px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.sobre__stat { display: flex; flex-direction: column; gap: 2px; }
+
+.sobre__stat-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.sobre__stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Journey steps */
+.sobre__journey {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.sobre__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+  position: relative;
+}
+
+.sobre__step:hover { background: var(--bg-card); }
+
+.sobre__step-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-glow);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  flex-shrink: 0;
+  border: 1px solid rgba(37,99,235,0.2);
+}
+
+.sobre__step-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.sobre__step-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.sobre__step-arrow {
+  position: absolute;
+  bottom: -14px;
+  left: 30px;
+  color: var(--accent);
+  font-size: 1rem;
+  transform: rotate(90deg);
+  opacity: 0.4;
+}
+
+@media (max-width: 900px) {
+  .sobre__inner { grid-template-columns: 1fr; gap: 48px; }
+}

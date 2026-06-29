@@ -1,0 +1,109 @@
+.formation { background: var(--bg-card); }
+
+.formation__eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.formation__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.formation__ver-todos {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--transition);
+  white-space: nowrap;
+}
+.formation__ver-todos:hover { gap: 10px; }
+
+.formation__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.formation__card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.formation__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: rgba(37,99,235,0.3);
+}
+
+.formation__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: 'Fira Code', monospace;
+  flex-shrink: 0;
+}
+
+.formation__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.formation__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.formation__desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.formation__badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 3px 10px;
+  background: var(--accent-glow);
+  color: var(--accent-light);
+  border-radius: 99px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border: 1px solid rgba(37,99,235,0.2);
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .formation__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .formation__grid { grid-template-columns: 1fr; }
+}

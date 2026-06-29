@@ -1,0 +1,207 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.navbar--scrolled {
+  border-color: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  position: relative;
+}
+
+/* Empuja todo lo de la derecha al extremo */
+.navbar__theme { margin-left: auto; }
+
+
+/* ── LOGO ── */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar__logo-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.navbar__logo-box span {
+  color: rgba(255,255,255,0.7);
+}
+
+.navbar__logo-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+/* ── LINKS ── */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar__link {
+  position: relative;
+  padding: 6px 12px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  text-decoration: none;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 99px;
+  transition: width var(--transition);
+}
+
+.navbar__link:hover {
+  color: var(--text-primary);
+  background: var(--border);
+}
+
+.navbar__link--active {
+  color: var(--accent);
+}
+
+.navbar__link--active::after {
+  width: 20px;
+}
+
+/* ── THEME TOGGLE ── */
+.navbar__theme {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 4px;
+  gap: 2px;
+  transition: background var(--transition);
+  flex-shrink: 0;
+}
+
+.navbar__theme-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  opacity: 0.45;
+  transition: opacity var(--transition), background var(--transition);
+}
+
+.navbar__theme-icon--active {
+  background: var(--accent-glow);
+  opacity: 1;
+}
+
+/* ── BURGER ── */
+.navbar__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.navbar__burger span {
+  display: block;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 99px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.navbar__burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar__burger.open span:nth-child(2) { opacity: 0; }
+.navbar__burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── MOBILE MENU ── */
+.navbar__mobile {
+  display: none;
+  flex-direction: column;
+  padding: 12px 24px 20px;
+  gap: 4px;
+  border-top: 1px solid var(--border);
+  background: var(--navbar-bg);
+  backdrop-filter: blur(12px);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.navbar__mobile--open {
+  max-height: 400px;
+}
+
+.navbar__mobile-link {
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+}
+
+.navbar__mobile-link:hover,
+.navbar__mobile-link--active {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .navbar__links { display: none; }
+  .navbar__burger { display: flex; }
+  .navbar__mobile { display: flex; }
+  .navbar__logo-name { display: none; }
+}
