@@ -10,6 +10,7 @@ import Formation    from "./components/Formation/Formation";
 import Contact      from "./components/Contact/Contact";
 import Footer       from "./components/Footer/Footer";
 import AllProjects  from "./pages/Allprojects";
+import AllCourses   from "./pages/Allcourses";
 
 import "./index.css";
 import "./App.css";
@@ -38,6 +39,7 @@ export default function App() {
         <Routes>
           <Route path="/"          element={<Portfolio />} />
           <Route path="/proyectos" element={<AllProjects />} />
+          <Route path="/cursos"    element={<AllCourses />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

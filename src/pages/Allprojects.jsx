@@ -1,27 +1,27 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 import ProjectModal from "../components/Projects/ProjectModal";
 
-// ── E-commerce ──────────────────────────────────────────
 import ecommerce1 from "../assets/e-commerce/hero.png";
 import ecommerce2 from "../assets/e-commerce/productos.png";
 import ecommerce3 from "../assets/e-commerce/detalle-producto.png";
 import ecommerce4 from "../assets/e-commerce/carrito.png";
 import ecommerce5 from "../assets/e-commerce/compra-finalizada.png";
 
-// ── Gestor financiero ───────────────────────────────────
 import finflow1 from "../assets/gasto-ingreso/form-inicial.png";
 import finflow2 from "../assets/gasto-ingreso/dashboard.png";
 import finflow3 from "../assets/gasto-ingreso/agregar-ingreso.png";
 
-// ── Quizz ───────────────────────────────────────────────
 import quizz1 from "../assets/quizz/inicio-quizz.png";
 import quizz2 from "../assets/quizz/inicio-preguntas.png";
 import quizz3 from "../assets/quizz/respuesta-correcta.png";
 import quizz4 from "../assets/quizz/respuesta-incorrecta.png";
 import quizz5 from "../assets/quizz/resumen.png";
 
-import "./AllProjects.css";
+import portafolio from "../assets/portafolio/inicio-portafolio.png";
+
+import "./Allprojects.css";
 
 const ALL_PROJECTS = [
   {
@@ -53,8 +53,8 @@ const ALL_PROJECTS = [
     title: "Portfolio Personal",
     description: "Este mismo portfolio. Diseño one-page con tema claro/oscuro, animaciones CSS, navegación con scroll spy y componentes React reutilizables.",
     tags: ["React", "CSS3", "Vite", "React Router DOM"],
-    github: "https://github.com/GonVar230",
-    images: [],
+    github: "https://github.com/GonVar230/Portafolio",
+    images: [portafolio],
   },
 ];
 
@@ -66,13 +66,31 @@ export default function AllProjects() {
     <div className="allp">
 
       <div className="allp__header">
-        <button className="allp__back" onClick={() => navigate("/")}>
-          ← Volver al portfolio
-        </button>
-        <div className="allp__hero">
-          <p className="allp__eyebrow">Trabajo</p>
-          <h1 className="allp__title">Todos los proyectos</h1>
-          <p className="allp__sub">{ALL_PROJECTS.length} proyectos · React, JavaScript, Firebase y más</p>
+        <div className="allp__header-inner">
+          <button className="allp__back" onClick={() => navigate("/")}>
+            ← Volver al portfolio
+          </button>
+          <div className="allp__hero">
+            <div>
+              <p className="allp__eyebrow">Trabajo</p>
+              <h1 className="allp__title">Todos los proyectos</h1>
+              <p className="allp__sub">{ALL_PROJECTS.length} proyectos · React, JavaScript, Firebase y más</p>
+            </div>
+            <div className="allp__stats">
+              <div className="allp__stat">
+                <span className="allp__stat-value">{ALL_PROJECTS.length}</span>
+                <span className="allp__stat-label">Proyectos</span>
+              </div>
+              <div className="allp__stat">
+                <span className="allp__stat-value">8+</span>
+                <span className="allp__stat-label">Tecnologías</span>
+              </div>
+              <div className="allp__stat">
+                <span className="allp__stat-value">1+</span>
+                <span className="allp__stat-label">Años</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -107,18 +125,12 @@ export default function AllProjects() {
 
                 <div className="allp__links">
                   {p.images.length > 0 && (
-                    <button
-                      className="allp__link allp__link--primary"
-                      onClick={() => setModal(p)}
-                    >
-                      Ver más 
+                    <button className="allp__link allp__link--primary" onClick={() => setModal(p)}>
+                      Ver más 🔍
                     </button>
                   )}
                   <a href={p.github} target="_blank" rel="noreferrer" className="allp__link">
-                    GitHub
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13">
-                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
+                    <FaGithub size={14} /> GitHub
                   </a>
                 </div>
               </div>

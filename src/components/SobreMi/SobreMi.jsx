@@ -2,8 +2,8 @@ import "./SobreMi.css";
 
 const STATS = [
   { value: "1+", label: "Años aprendiendo" },
-  { value: "6+", label: "Proyectos realizados" },
-  { value: "3", label: "Cursos completados" },
+  { value: "7+", label: "Proyectos realizados" },
+  { value: "5", label: "Cursos completados" },
 ];
 
 export default function SobreMi() {

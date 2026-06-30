@@ -71,15 +71,6 @@
 
 .hero__accent {
   color: var(--accent);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  min-width: 160px;
-  display: inline-block;
-}
-
-.hero__cursor {
-  color: var(--accent);
-  animation: blink-cursor 1s step-end infinite;
-  font-weight: 300;
 }
 
 .hero__sub {
@@ -203,6 +194,12 @@
   font-family: 'Fira Code', monospace;
   font-size: 0.78rem;
   line-height: 1.8;
+}
+
+.hero__code-row {
+  display: flex;
+  gap: 16px;
+  padding: 0 20px;
 }
 
 .hero__code-line {
