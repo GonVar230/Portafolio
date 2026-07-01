@@ -126,7 +126,7 @@ export default function AllProjects() {
                 <div className="allp__links">
                   {p.images.length > 0 && (
                     <button className="allp__link allp__link--primary" onClick={() => setModal(p)}>
-                      Ver más 🔍
+                      Ver más 
                     </button>
                   )}
                   <a href={p.github} target="_blank" rel="noreferrer" className="allp__link">
