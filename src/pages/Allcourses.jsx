@@ -11,7 +11,7 @@ import certWeb    from "../assets/certificados/certificado-desarrolloweb.png";
 import certExcel  from "../assets/certificados/curso-excel.png";
 import certAI     from "../assets/certificados/certificado-anthropic.png";
 
-import "./AllCourses.css";
+import "./Allcourses.css";
 
 const ALL_COURSES = [
   {
