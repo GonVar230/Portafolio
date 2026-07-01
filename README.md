@@ -1,8 +1,8 @@
 <div align="center">
 
-# Gonzalo Varela — Desarrollador Web
+# Hi, I'm Gonzalo 👋
 
-**Pienso, creo y mejoro en cosas nuevas.**
+I'm a self-taught web developer from Uruguay focused on building real things with React and JavaScript.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Gonzalo_Varela-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gonzalo-varela-5a044532a/)
 [![GitHub](https://img.shields.io/badge/GitHub-GonVar230-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GonVar230)
@@ -11,45 +11,47 @@
 
 ---
 
-## 👋 Sobre mí
+## About me
 
-Soy desarrollador web autodidacta especializado en **React y JavaScript**. Aprendo construyendo proyectos reales que resuelven problemas concretos. Actualmente profundizando en **Node.js y Next.js**.
+I started learning web development on my own — no bootcamp, just online courses and a lot of projects. I enjoy the process of turning an idea into something that actually works in the browser.
 
-Disponible para proyectos freelance y colaboraciones.
+Right now I mostly work with **React and JavaScript**, and I'm learning **Node.js and Next.js** to get more comfortable on the backend side as well.
+
+I'm open to freelance projects and collaborations.
 
 ---
 
-## 🚀 Proyectos destacados
+## What I've built
 
 ### [Vintage Jerseys](https://github.com/GonVar230/E-commerce)
-E-commerce de camisetas de fútbol vintage con carrito de compras, autenticación de usuarios y gestión de productos en tiempo real.
+An e-commerce store for vintage football jerseys. You can browse products, add them to the cart and complete a purchase. Authentication and product data are handled through Firebase.
 
 `React` `Firebase` `Context API` `React Router DOM` `Vite`
 
 ---
 
-### [FinFlow — Gestor Financiero](https://github.com/GonVar230/Registro-gastos-e-ingresos-)
-Aplicación para administrar ingresos, gastos y ahorros personales. Balance mensual, filtros por categoría y conversión de monedas en tiempo real.
+### [FinFlow](https://github.com/GonVar230/Registro-gastos-e-ingresos-)
+A personal finance tracker where you can log income and expenses, set savings goals and see your monthly balance. It also converts currencies using a live API.
 
 `JavaScript ES6+` `HTML5` `CSS3` `Exchange Rate API` `SweetAlert2`
 
 ---
 
-### [Quizz JavaScript](https://github.com/GonVar230/Quizz-)
-Juego de preguntas y respuestas sobre JavaScript con feedback inmediato y pantalla de resumen final.
+### [JavaScript Quiz](https://github.com/GonVar230/Quizz-)
+A simple quiz game about JavaScript. Each question gives you instant feedback and at the end you get a summary of how you did.
 
 `JavaScript` `HTML5` `CSS3` `JSON`
 
 ---
 
-### [Portfolio Personal](https://github.com/GonVar230/Portafolio)
-Este mismo portfolio. One-page con tema claro/oscuro, scroll spy, modal con carrusel de proyectos y páginas separadas para proyectos y certificados.
+### [This portfolio](https://github.com/GonVar230/Portafolio)
+I designed and built this from scratch. It has a dark and light theme, smooth scroll between sections, a modal with image carousel for each project, and separate pages for all projects and certificates — no full page reloads.
 
 `React` `Vite` `React Router DOM` `CSS Variables`
 
 ---
 
-## 🛠 Stack
+## Technologies I work with
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -60,22 +62,22 @@ Este mismo portfolio. One-page con tema claro/oscuro, scroll spy, modal con carr
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
-**Aprendiendo:** Node.js · Next.js
+Still learning: **Node.js · Next.js**
 
 ---
 
-## 🎓 Formación
+## Courses & certificates
 
-| Curso | Plataforma | Año |
+| Course | Platform | Year |
 |---|---|---|
 | React JS | Coderhouse | 2026 |
 | JavaScript | Coderhouse | 2026 |
-| Desarrollo Web — TOP 10 | Coderhouse | 2025 |
-| Excel TOTAL de Cero a Avanzado | Udemy | 2025 |
+| Web Development — finished in the Top 10 | Coderhouse | 2025 |
+| Excel from Zero to Advanced | Udemy | 2025 |
 | Claude Code in Action | Anthropic | 2026 |
 
 ---
 
 <div align="center">
-  <sub>Abierto a propuestas · <a href="https://www.linkedin.com/in/gonzalo-varela-5a044532a/">Contactame en LinkedIn</a></sub>
+  <sub>Feel free to reach out → <a href="https://www.linkedin.com/in/gonzalo-varela-5a044532a/">LinkedIn</a></sub>
 </div>
